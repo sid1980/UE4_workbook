@@ -1,0 +1,32 @@
+Begin Object Class=/Script/Engine.Material Name="M_White"
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1"
+      R=1.000000
+      MaterialExpressionEditorX=-304
+      MaterialExpressionEditorY=224
+      MaterialExpressionGuid=4CA85D5246009E50A1968DA5F243183F
+      Material=Material'"M_White"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      R=0.750000
+      MaterialExpressionEditorX=-299
+      MaterialExpressionEditorY=46
+      MaterialExpressionGuid=4CA85D5246009E50A1968DA5F243183F
+      Material=Material'"M_White"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_0"')
+   Roughness=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_1"')
+   Expressions(0)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   Expressions(1)=MaterialExpressionConstant'"MaterialExpressionConstant_1"'
+   bCanMaskedBeAssumedOpaque=True
+   StateId=0EB1C3704503A8CEF42F28BC07E09978
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=506A91D540F1027BDF7755BF38B215FF
+End Object
