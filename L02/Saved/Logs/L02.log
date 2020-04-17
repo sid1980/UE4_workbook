@@ -717,3 +717,62 @@ Script Stack (0 frames):
 [2020.04.17-13.20.28:764][893]SourceControl:  create mode 100644 L02/Content/ThirdPersonBP/Blueprints/ThirdPersonGameMode.uasset
 [2020.04.17-13.20.28:764][893]SourceControl:  create mode 100644 L02/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
 [2020.04.17-13.20.28:767][893]SourceControl: Commited [master 4699b63] add blank scene.
+[2020.04.17-13.32.25:698][240]LogTemp: Repeating last play command: Selected Viewport
+[2020.04.17-13.32.25:702][240]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2020.04.17-13.32.25:702][240]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.17-13.32.25:703][240]PIE: New page: PIE session: ThirdPersonExampleMap (17 апр. 2020 г., 19:32:25)
+[2020.04.17-13.32.25:704][240]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.04.17-13.32.25:705][240]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2020.04.17-13.32.25:705][240]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.04.17-13.32.25:719][240]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014505s)
+[2020.04.17-13.32.25:720][240]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2020.04.17-13.32.25:720][240]LogPlayLevel: PIE: World Init took: (0.001066s)
+[2020.04.17-13.32.25:720][240]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.015889s)
+[2020.04.17-13.32.25:742][240]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
+[2020.04.17-13.32.25:743][240]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.04.17-13.32.25:743][240]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.04.17-13.32.25:743][240]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.04.17-13.32.25:743][240]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.04.17-13.32.25:743][240]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.04.17-13.32.25:743][240]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.04.17-13.32.25:743][240]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.04.17-13.32.25:743][240]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.04.17-13.32.25:743][240]LogAudio: Display: Using built-in audio occlusion.
+[2020.04.17-13.32.25:743][240]LogAudioMixer: Display: Initializing audio mixer.
+[2020.04.17-13.32.25:746][240]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.04.17-13.32.25:746][240]LogAudioMixer: Display: Name: Focusrite USB (Focusrite USB Audio)
+[2020.04.17-13.32.25:746][240]LogAudioMixer: Display: Is Default: Yes
+[2020.04.17-13.32.25:746][240]LogAudioMixer: Display: Sample Rate: 192000
+[2020.04.17-13.32.25:746][240]LogAudioMixer: Display: Channel Count Used: 2
+[2020.04.17-13.32.25:747][240]LogAudioMixer: Display: Device Channel Count: 2
+[2020.04.17-13.32.25:747][240]LogAudioMixer: Display: Channel Order:
+[2020.04.17-13.32.25:747][240]LogAudioMixer: Display: 0: FrontLeft
+[2020.04.17-13.32.25:747][240]LogAudioMixer: Display: 1: FrontRight
+[2020.04.17-13.32.25:749][240]LogAudioMixer: Display: Using Audio Device Focusrite USB (Focusrite USB Audio)
+[2020.04.17-13.32.25:750][240]LogInit: FAudioDevice initialized.
+[2020.04.17-13.32.25:762][240]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2020.04.17-13.32.25:764][240]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2020.04.17-16.32.25
+[2020.04.17-13.32.25:764][240]LogWorld: Bringing up level for play took: 0.001361
+[2020.04.17-13.32.25:764][240]LogOnline: OSS: Creating online subsystem instance for: :Context_1
+[2020.04.17-13.32.25:821][240]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 20 classes and 0 folders.
+[2020.04.17-13.32.25:821][240]PIE: Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0,423
+[2020.04.17-13.32.25:821][240]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2020.04.17-13.32.49:315][ 38]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.17-13.32.49:315][ 38]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.17-13.32.49:315][ 38]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2020.04.17-13.32.49:316][ 38]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.17-13.32.49:316][ 38]LogWorld: BeginTearingDown for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.04.17-13.32.49:316][ 38]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.17-13.32.49:316][ 38]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.04.17-13.32.49:316][ 38]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.17-13.32.49:324][ 38]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.04.17-13.32.49:325][ 38]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2020.04.17-13.32.49:328][ 38]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.17-13.32.49:349][ 38]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.17-13.32.49:350][ 38]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.17-13.32.49:353][ 38]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2020.04.17-13.32.49:417][ 42]LogPlayLevel: Display: Destroying online subsystem :Context_1
+[2020.04.17-13.33.12:944][964]LogSlate: Took 0.000127 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.04.17-13.39.04:066][116]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2020.04.17-13.39.38:055][ 98]SourceControl: fatal: F:/Epic Games/UE_4.24/Engine/Content: 'F:/Epic Games/UE_4.24/Engine/Content' is outside repository
+[2020.04.17-13.39.38:133][ 98]EditorErrors: Warning: No assets to check in!
