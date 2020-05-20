@@ -1,0 +1,199 @@
+#! C:/Program Files/Nuke10.5v4/nuke-10.5.4.dll -nx
+#write_info Write1 file:"D:/UEVisualDesign/UE4_workbook/L05_Materials/ref/chevron_512_v1.png" format:"512 512 1" chans:":rgba.red:rgba.green:rgba.blue:rgba.alpha:" framerange:"1 100" fps:"0" colorspace:"default (sRGB)" datatype:"8 bit" transfer:"unknown" views:"main" colorManagement:"Nuke"
+version 10.5 v4
+define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="-1600" y="-120" w="1600" h="1200" screen="1">
+        <splitter orientation="1">
+            <split size="54"/>
+            <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                <page id="Toolbar.1"/>
+            </dock>
+            <split size="561"/>
+            <dock id="" activePageId="DAG.1" focus="true">
+                <page id="DAG.1"/>
+            </dock>
+            <split size="961"/>
+            <dock id="" activePageId="Viewer.1">
+                <page id="Viewer.1"/>
+            </dock>
+        </splitter>
+    </window>
+</layout>
+}
+Root {
+ inputs 0
+ name D:/UEVisualDesign/UE4_workbook/L05_Materials/ref/nk/L05_Materials.nk
+ format "2132 870 0 0 2132 870 1 Urfin2_2KStereo"
+ proxy_type scale
+ proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
+ proxy_scale 1
+ proxySetting always
+ colorManagement Nuke
+ workingSpaceLUT linear
+ monitorLut sRGB
+ int8Lut sRGB
+ int16Lut sRGB
+ logLut Cineon
+ floatLut linear
+ luts {linear {}
+   sRGB {}
+   rec709 {}
+   Cineon {}
+   Gamma1.8 {}
+   Gamma2.2 {}
+   Gamma2.4 {}
+   Panalog {}
+   REDLog {}
+   ViperLog {}
+   AlexaV3LogC {}
+   PLogLin {}
+   SLog {}
+   SLog1 {}
+   SLog2 {}
+   SLog3 {}
+   CLog {}
+   Protune {}
+   REDSpace {}
+   sLog {"pow(10.0, ((t - 0.616596 - 0.03) /0.432699)) - 0.037584"}}
+ addUserKnob {20 User}
+ addUserKnob {1 project}
+ project urfin2
+}
+Read {
+ inputs 0
+ file D:/UEVisualDesign/UE4_workbook/L5_Materials/ref/плитки-текстуры-delft-11742925.jpg
+ format "1300 1390 0 0 1300 1390 1 "
+ origset true
+ name Read1
+ xpos -491
+ ypos 78
+ addUserKnob {20 Utilities}
+ addUserKnob {22 readnode_nearestframe l "              set missing frame: nearest frame              " T "import node_function;nf=node_function.ReadNodeFunction('selected');nf.nearestframe()" +STARTLINE}
+ addUserKnob {22 readnode_set_firstframe l "               set first and last frame to 1                " T "import node_function;nf=node_function.ReadNodeFunction('selected');nf.set_firstframe()" +STARTLINE}
+ addUserKnob {22 read_reload_all_reads l "                      reload all reads                      " T "import node_function;nf=node_function.ReadNodeFunction('all');nf.reload_all_reads()" +STARTLINE}
+ addUserKnob {22 read_add_anaglyph l "                     add anaglyph node                      " T "import node_function;nf=node_function.ReadNodeFunction('node');nf.add_anaglyph_node()" +STARTLINE}
+}
+Read {
+ inputs 0
+ file D:/UEVisualDesign/UE4_workbook/L5_Materials/ref/нашивки-опасности-безшовные-5597540.jpg
+ format "800 800 0 0 800 800 1 "
+ origset true
+ name Read2
+ xpos -73
+ ypos 188
+ addUserKnob {20 Utilities}
+ addUserKnob {22 readnode_nearestframe l "              set missing frame: nearest frame              " T "import node_function;nf=node_function.ReadNodeFunction('selected');nf.nearestframe()" +STARTLINE}
+ addUserKnob {22 readnode_set_firstframe l "               set first and last frame to 1                " T "import node_function;nf=node_function.ReadNodeFunction('selected');nf.set_firstframe()" +STARTLINE}
+ addUserKnob {22 read_reload_all_reads l "                      reload all reads                      " T "import node_function;nf=node_function.ReadNodeFunction('all');nf.reload_all_reads()" +STARTLINE}
+ addUserKnob {22 read_add_anaglyph l "                     add anaglyph node                      " T "import node_function;nf=node_function.ReadNodeFunction('node');nf.add_anaglyph_node()" +STARTLINE}
+}
+Read {
+ inputs 0
+ file D:/UEVisualDesign/UE4_workbook/L5_Materials/ref/delft-11742938.jpg
+ format "1300 1390 0 0 1300 1390 1 "
+ origset true
+ name Read4
+ xpos -192
+ ypos -28
+ addUserKnob {20 Utilities}
+ addUserKnob {22 readnode_nearestframe l "              set missing frame: nearest frame              " T "import node_function;nf=node_function.ReadNodeFunction('selected');nf.nearestframe()" +STARTLINE}
+ addUserKnob {22 readnode_set_firstframe l "               set first and last frame to 1                " T "import node_function;nf=node_function.ReadNodeFunction('selected');nf.set_firstframe()" +STARTLINE}
+ addUserKnob {22 read_reload_all_reads l "                      reload all reads                      " T "import node_function;nf=node_function.ReadNodeFunction('all');nf.reload_all_reads()" +STARTLINE}
+ addUserKnob {22 read_add_anaglyph l "                     add anaglyph node                      " T "import node_function;nf=node_function.ReadNodeFunction('node');nf.add_anaglyph_node()" +STARTLINE}
+}
+Read {
+ inputs 0
+ file D:/UEVisualDesign/UE4_workbook/L05_Materials/ref/white-black-background-chevron-striped-600w-217494388.jpg
+ format "598 620 0 0 598 620 1 "
+ origset true
+ name Read3
+ xpos -383
+ ypos 145
+ addUserKnob {20 Utilities}
+ addUserKnob {22 readnode_nearestframe l "              set missing frame: nearest frame              " T "import node_function;nf=node_function.ReadNodeFunction('selected');nf.nearestframe()" +STARTLINE}
+ addUserKnob {22 readnode_set_firstframe l "               set first and last frame to 1                " T "import node_function;nf=node_function.ReadNodeFunction('selected');nf.set_firstframe()" +STARTLINE}
+ addUserKnob {22 read_reload_all_reads l "                      reload all reads                      " T "import node_function;nf=node_function.ReadNodeFunction('all');nf.reload_all_reads()" +STARTLINE}
+ addUserKnob {22 read_add_anaglyph l "                     add anaglyph node                      " T "import node_function;nf=node_function.ReadNodeFunction('node');nf.add_anaglyph_node()" +STARTLINE}
+}
+Crop {
+ box {158 19 597 620}
+ reformat true
+ crop false
+ name Crop1
+ xpos -392
+ ypos 275
+}
+Reformat {
+ format "512 512 0 0 512 512 1 square_512"
+ name Reformat1
+ xpos -392
+ ypos 301
+}
+set N3cb1400 [stack 0]
+Tile {
+ columns 2
+ name Tile1
+ xpos -226
+ ypos 314
+}
+Viewer {
+ frame 1
+ frame_range 1-100
+ name Viewer1
+ xpos -40
+ ypos -10
+}
+push $N3cb1400
+Shuffle {
+ alpha red
+ name Shuffle1
+ label "\[value in]"
+ xpos -392
+ ypos 339
+ addUserKnob {20 Utilities}
+ addUserKnob {22 shaffle_plus_channel l "                    shaffle plus channel                    " T "import node_function;nf=node_function.ShuffleNodeFunction(\"node\");nf.plus_channel()" +STARTLINE}
+ addUserKnob {22 shuffle_all_color l "                   shuffle all color: RED                   " T "import node_function;nf=node_function.ShuffleNodeFunction(\"node\");nf.all_color(\"red\")" +STARTLINE}
+ addUserKnob {22 shuffle_all_color l "                  shuffle all color: GREEN                  " T "import node_function;nf=node_function.ShuffleNodeFunction(\"node\");nf.all_color(\"green\")" +STARTLINE}
+ addUserKnob {22 shuffle_all_color l "                  shuffle all color: BLUE                   " T "import node_function;nf=node_function.ShuffleNodeFunction(\"node\");nf.all_color(\"blue\")" +STARTLINE}
+ addUserKnob {22 shuffle_all_color l "                  shuffle all color: ALPHA                  " T "import node_function;nf=node_function.ShuffleNodeFunction(\"node\");nf.all_color(\"alpha\")" +STARTLINE}
+}
+Grade {
+ channels rgba
+ blackpoint 0.3
+ whitepoint 0.4
+ white_clamp true
+ name Grade1
+ xpos -392
+ ypos 377
+ addUserKnob {20 Utilities}
+ addUserKnob {22 grade_channels_alpha l "                       channels alpha                       " T "import node_function;nf=node_function.GradeNodeFunction(\"node\");nf.channels_alpha()" +STARTLINE}
+ addUserKnob {22 grade_maskChannel_alpha l "                     maskChannel alpha                      " T "import node_function;nf=node_function.GradeNodeFunction(\"node\");nf.maskChannel_alpha()" +STARTLINE}
+ addUserKnob {22 ps_to_nuke_correct l "                     ps_to_nuke_correct                     " T "import node_function;nf=node_function.GradeNodeFunction(\"node\");nf.ps_to_nuke_correct()" +STARTLINE}
+}
+EdgeBlur {
+ size 4
+ name EdgeBlur1
+ xpos -392
+ ypos 403
+}
+Write {
+ channels rgba
+ file D:/UEVisualDesign/UE4_workbook/L05_Materials/ref/chevron_512_v1.png
+ file_type png
+ checkHashOnRead false
+ version 3
+ name Write1
+ knobChanged "n=nuke.thisNode()\nk=nuke.thisKnob()\nif k.name() == \"tr_net_render\":\n   n\['tr_Level'].setEnabled(k.value())\n   n\['tr_frame_range'].setEnabled(k.value())\n   n\['tr_disable_from_net_render'].setEnabled(k.value())\n"
+ xpos -392
+ ypos 446
+ addUserKnob {20 tr_Tractor l Tractor}
+ addUserKnob {6 tr_net_render l "Net render" -STARTLINE}
+ addUserKnob {4 tr_Level l Level +DISABLED M {1 2 3 4}}
+ addUserKnob {1 tr_frame_range l "Frame range:" +DISABLED}
+ addUserKnob {6 tr_disable_from_net_render l "Disable in Net render" -STARTLINE +DISABLED}
+ addUserKnob {26 tr_divider_line l "" +STARTLINE}
+ addUserKnob {22 tr_last_dailies l "Open last dailies" -STARTLINE}
+ addUserKnob {26 tr_divider_line1 l "" +STARTLINE}
+ addUserKnob {22 tractor_spool l "tractor spool" -STARTLINE T "SITEPACKAGES = r'D:\\work_in_progress\\sandbox\\tractor_nuke'\nif SITEPACKAGES not in sys.path:\n    sys.path.append(SITEPACKAGES)\n\nimport nukeToTractor.main as main\nreload(main)\nn=nuke.thisNode()\nmain.main(n.name())\n"}
+}
